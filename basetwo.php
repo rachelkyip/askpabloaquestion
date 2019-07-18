@@ -1,0 +1,34 @@
+<?php
+//Step1
+ $db = mysqli_connect('127.0.0.1','rachelkyip','oreo7kglr','pq')
+ or die('Error connecting to MySQL server.');
+?>
+
+<html>
+  <head>
+    <title>The Pablo Queue</title>
+  </head>
+  <body>
+    <a href="base.html">Submit a question</a>
+    <h2>View questions based on category</h2>
+    <select name="questiontype">
+          <option value="product">Product</option>
+          <option value="bug">Bug</option>
+          <option value="design">Design</option>
+          <option value="process">Process</option>
+          <option value="hr">Concern</option>
+          <option value="life"> Life advice</option>
+    </select>
+    <input type="submit">
+    <br>
+    <h2>View questions based on urgency</h2>
+    <select name="questionurgency">
+      <option value="1">Not urgent</option>
+      <option value="2">Semi-urgent</option>
+      <option value="3">Urgent</option>
+      <option value="4">Very urgent</option>
+      <option value="5">Life or death</option>
+    </select>
+    <input type="submit">
+
+</html>
